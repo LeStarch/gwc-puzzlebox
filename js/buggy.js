@@ -7,7 +7,7 @@ function submit()
     var STOP = false;
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    document.getElementById("messages").innerHTML = "<br />";
+    document.getElementById("messages").innerHTML = "<br /><br/>";
     /**
      * Callback for result of checking of password
      */
@@ -20,7 +20,7 @@ function submit()
             login(username);
             return;
         }
-        document.getElementById("messages").innerHTML = "We are sorry, but the username \""+username+"\" and the password \""+password+"\" do not reprsent a valid combination."    
+        document.getElementById("messages").innerHTML += "<br/>We are sorry, but the username \""+username+"\" and the password \""+password+"\" do not reprsent a valid combination."    
     }
     check(username,password,checkCallback);
     /**
@@ -35,5 +35,5 @@ function submit()
         }
     }
     waiting();
-    setInterval(waiting,450);
+    setInterval(waiting,550);
 }
