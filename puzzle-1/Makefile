@@ -1,3 +1,4 @@
+all: puzzle-box gen
 puzzle-box: puzzlebox.c
 	gcc puzzlebox.c -o puzzle-box
 gen: gen.c

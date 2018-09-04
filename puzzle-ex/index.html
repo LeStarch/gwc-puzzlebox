@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GWC Puzzle Box II</title>
+    <script src="js/buggy.js"></script>
+    <script src="js/confusion.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="content" class="content">
+      <h2>GWC Puzzle-Box II</h2>
+      <p>
+      In order to recieve your GWC secret message, please login using your username and password.
+      </p>
+      <div id="inner-content">
+        <label for="username">Username:</label>
+        <input type="text" id="username"></input>
+        <label for="password">Password:</label>
+        <input type="text" id="password"></input>
+        <button id="submit" onclick="submit();">Login</button>
+        <div id="messages">
+          <br />
+        </div>
+      </div>
+    </div>
+    <span class="content footer">
+        Photo Credit: "Bleakness; Michigan" Copyright LeStarch - 2013
+    </span>
+    <script>
+        (function(){setCookie();})();
+    </script>
+  <body>
+</html>
