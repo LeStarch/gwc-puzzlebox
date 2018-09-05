@@ -30,6 +30,8 @@ Remember:
 - Try to think of things the programmer might have missed.
 - Think outside the box.
 
+*Do NOT* be afraid to break the program, that is your job!
+
 ## Rerunning the Program
 
 You may destory the program in your attempts to break it. This is 
@@ -41,6 +43,9 @@ CTRL-C
 ...
 ./puzzle-box
 ```
+
+Good Luck!!
+
 ---
 
 <div style="page-break-after: always;"></div>
