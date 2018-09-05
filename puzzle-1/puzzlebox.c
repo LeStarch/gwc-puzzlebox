@@ -11,7 +11,7 @@ int main(int argc, char** argv)
     int index = 0, i = 0, correct = 1,tmp = 0;
     char buffer[LENGTH] = {'\0','\0','\0','\0','\0','\0','\0'};
     char secret[] = {71,87,67,32,105,115,32,103,114,101,97,116,0};
-    char password[20] = {'S','a','t','u','r','n','\0'};
+    char password[20] = {'b','a','l','l','e','T','\0'};
     char key;
     //Read guess
     while (1)
