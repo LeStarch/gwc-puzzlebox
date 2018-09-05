@@ -28,6 +28,7 @@ Remember:
 - Experiment with the program. Odd behavior means you are on the right track.
 - Patience. Hacking requires time.
 - Try to think of things the programmer might have missed.
+- Look for anything out-of-palce
 - Think outside the box.
 
 *Do NOT* be afraid to break the program, that is your job!
