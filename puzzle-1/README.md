@@ -28,8 +28,9 @@ Remember:
 - Experiment with the program. Odd behavior means you are on the right track.
 - Patience. Hacking requires time.
 - Try to think of things the programmer might have missed.
-- Look for anything out-of-palce
+- Look for anything out-of-place and follow it.
 - Think outside the box.
+- Have no fear.
 
 *Do NOT* be afraid to break the program, that is your job!
 
@@ -40,6 +41,7 @@ You may destory the program in your attempts to break it. This is
 and then enter "./puzzle-box" (type "./puzzle-box" and press ENTER).
 
 ```
+...
 CTRL-C
 ...
 ./puzzle-box
@@ -47,6 +49,7 @@ CTRL-C
 
 Good Luck!!
 
+---
 ---
 
 <div style="page-break-after: always;"></div>
