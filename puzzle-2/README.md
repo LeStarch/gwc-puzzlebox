@@ -36,8 +36,13 @@ know what is coming their way (but follow the boundaries below).
 
 This is a simulation, however; there are boundaries that should be
 respected during this time. Please *DO NOT* stalk your target online.
-Everything you need can be found in-class, and there is no need to
-search on social media, nor other online resources.
+Everything you need can be found in-class, and via communication.
+
+You do not need:
+
+- Social media
+- Google searches
+- Background checks
 
 ---
 ---
