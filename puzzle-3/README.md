@@ -15,6 +15,8 @@ internet. Packets will fly by and you'll need to isolate the useful
 information from the not-so-useful in order to steal the secret you are
 looking for.
 
+Simple, right?
+
 In this exercise, you are using the professional program used to snoop data.
 You are isolated on a network with various computers talking about. Some of
 those computers are not targets and others are. Try to track down the correct
@@ -22,12 +24,14 @@ computer, isolate the packet stream, and then view the data to extract secret.
 
 Remember:
 
-- Explore the packets you can capture and the interfaces available.
+- Explore the packets you can capture.
 - Try to use filters to reduce the data flow.
+- Look for computers and packets that look useful.
 - Patience. Hacking requires time.
 - Look for anything out-of-place and follow it.
 - Think outside the box.
 - Have no fear.
+- Explore and see what is happening on the network.
 
 *Do NOT* be afraid!
 
