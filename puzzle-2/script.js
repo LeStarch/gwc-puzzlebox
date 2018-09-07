@@ -3,10 +3,10 @@
  */
 
 var userdict = [ 
-    {'name':'abc', 'passwd':'abc'},
-    {'name':'blacky', 'passwd':'blacky'},
-    {'name':'reddy', 'passwd':'reddy'},
-    {'name':'selina', 'passwd':'abc123'}
+    {'name':'gwc', 'passwd':'gwcisawesome'},
+    {'name':'linton', 'passwd':'Ilovecats'},
+    {'name':'ldang', 'passwd':'4cats'},
+    {'name':'starch', 'passwd':'nasa2018'}
 ];
 
 function valid_user(username) {
