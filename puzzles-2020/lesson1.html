@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GWC: Hacking 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/lesson1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-dark bg-dark"><h1 class="navbar-text">Lesson One: Let's Break Something</h1></nav>
+
+    <p>Try to break the object shown below. Look at what it is asking for, and see if you can get it to behave in a way
+    that the designer did not intend. Reload the page if you'd like to reset it.</p>
+
+    <div class="card bg-dark">
+        <div class="card-body">
+            <div class="input-group bg-dark">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="favorite-label">Favorite Number</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Favorite Number" id="input1">
+                <button class="btn btn-danger" onclick="submit1();">Submit</button>
+            </div>
+            <span id="num1"></span>
+            <div id="errordiv" hidden>
+                <div class="alert alert-danger" role="alert" ><em>Error:</em><span id="errorbox"></span></div>
+                <div class="alert alert-success" role="alert">
+                    <div>Great!!! <p>Now the question is, using what you have learned, can you get your name to display
+                    somewhere on this webpage?  See if you can figure it out! Once your name is shown somewhere on the
+                    page, click 'Next'.</p></div><span id="extra"></span>
+                    <button class="btn btn-success" onclick="next1();">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="next2" hidden>
+        <h2>What Just Happened</h2>
+        <p>This is what is known as an injection attack. Here we take some form of code and inject it into a system that
+        processes that code. In doing this, we tricked the program to run that code.  This can be very dangerous.</p>
+
+        <p>Our pusheen lives on another machine, not the one running this browser. Imagine this pusheen was a zero-size
+        image.  The user would not know it is there, but the computer hosting the image would still get a request for it
+        and thus know about our user. This is one way you are tracked on the internet.  Advertisers place zero-sized
+        images in your page, and when the image loads, their server gets notified. Then they can track you....clever.</p>
+
+        <p>Where can this be dangerous? Think about social media.  What if you could inject code (don't try it) into a
+        social media post. Then anyone seeing that post could be tracked (like our image) or would be tricked into
+        running code they didn't ask to run.  You could tell their computer what code to run.</p>
+
+        <p>How do we prevent this on our sites?  Rule 1 of security is to always sanitize user input. This means to
+        ensure it is not dangerous. For HTML, that means removing all &gt; or &lt; symbols. Without these symbols, no
+        tag can be used, and thus it is not possible to inject HTML. For each user input, think about what could be run
+        if the input was some type of code and then prevent that code by stripping out needed characters.</p>
+
+        <p>Feel free to explore, or move onto the next lesson.</p>
+    </div>
+
+    <div id="next1" hidden>
+        <h2>A Bit of HTML</h2>
+        <p>A webpage, at its most basic, is text and special annotations called tags. Text and the tags are called HTML.
+        That means everything you are reading here is HTML as drawn (rendered) by your browser. If you want to see this
+        HTML, right-click and select "View Page Source". This will display the text along with the tags used to change its
+        rendering.</p>
+
+        <p>HTML tags are words inside &lt &gt pairs. These tags tell your browser how to interpret the text and display it.
+        For example, &lt h2 &gt is a mid-section header. It means the text is bigger, but not the biggest. The following is
+        an example of HTML tags and text:</p>
+        <div class="card">
+            <div class="card-body">
+                <pre><code>
+                &lth2&gtA Mid Header&lt/h2&gt
+                &ltdiv&gt This is a division. It adds a section to your page. &ltem&gtThis is emphasized text.&lt/em&gt&lt/div&gt
+                Pusheen: &ltimg src="https://i.pinimg.com/originals/cb/f6/8b/cbf68beb6ad6bad1e301a442b6432a45.gif"/&gt
+            </code></pre>
+            </div>
+        </div>
+        <p>When your browser reads this code, it will run a program to display the rendered output. In the case of our example
+            above, the browser will draw the output shown in the box below.</p>
+        <div class="card bg-dark">
+            <div class="card-body">
+                <h2>A Mid Header</h2>
+                <div> This is a division. It adds a section to your page. <em>This is emphasized text.</em></div>
+                Pusheen: <img src="https://i.pinimg.com/originals/cb/f6/8b/cbf68beb6ad6bad1e301a442b6432a45.gif"/>
+            </div>
+        </div>
+        <p>These tags are described in the table below. The question a hacker would ask is: what can you now do with
+        this information?  Apply what you have learned in all parts of the lesson.  If you are stuck, here is a hint:
+        <span class="hint">Can you get the pusheen to display a second time on this page?</span></p>
+        <table class="table table-dark">
+            <tr><th>Tag</th><th>Description</th></tr>
+            <tr><td>&lth2&gt</td><td>Secondary section header. Makes text stick out like a section header.</td></tr>
+            <tr><td>&ltdiv&gt</td><td>Division. These are used to group other tags within.</td></tr>
+            <tr><td>&ltem&gt</td><td>Emphasis is applied to text within this tag.</td></tr>
+            <tr><td>&ltimg&gt</td><td>Inserts an image. Specify the URL of the image with src="some/url/here".</td></tr>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

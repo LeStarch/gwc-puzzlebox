@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lesson 0: Thinking Like a Hacker</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark"><h1 class="navbar-text">Lesson 0: Think Like A Hacker: 40+ mins</h1></nav>
+
+        <p>Hackers and security personnel are involved in a cat-and-mouse game. Each is trying to outwit the other and
+        either protect, or steal data. In this lesson, we will play a full class game to try and show this as well as
+        learn about a type of hacking attack.</p>
+
+        <p>We will break into 2 teams: the users and servers, and the hackers. The users and the servers work as a team
+        and must communicate back and forth. Users ask a question of the servers, and servers answer the question. Easy,
+        right?  However, the hackers get to sit in between and change the questions and returned answers. Now a game is
+        afoot!  The users and servers need to work together to try and communicate without letting the hackers in.  The
+        hackers must attack and remain unnoticed.</p>
+
+        <table class="table table-dark table-striped">
+            <tr><th>Requirements</th></tr>
+            <tr><td>Six or more students</td></tr>
+            <tr><td>Three mentors</td></tr>
+            <tr><td>One activity lead</td></tr>
+            <tr><td>Breakout rooms, or ability to do small groups</td></tr>
+            <tr><td>Pencil/paper/pen</td></tr>
+        </table>
+
+        <p>This game is all about communication in untrusted environments. The users/servers team will send questions
+        and responses back-and-forth. They must be careful to invalidate messages that may be altered or broken by the
+        hackers group. This group must also be careful not to invalidate their own messages.</p>
+
+        <p>Hackers on the other hand must know when and how to strike in a way as to remain undetected. They can choose
+        to attack whenever they please, but must do so without alarming either of the two endpoints. In order to score,
+        the hackers must allow the users and servers to remain blissfully unaware of their influence.</p>
+
+        <table class="table table-dark table-striped">
+            <tr><th>Rules</th>
+            <tr><td>Setup: Teams are given 3 mins to discuss strategy before a game begins</td></tr>
+            <tr><td>Round: one question and response pair</td></tr>
+            <tr><td>Game: 6 mins to run as many rounds as possible</td></tr>
+            <tr><td>The game is not over until the active round ends</td></tr>
+            <tr><td>The users and servers team will be broken into two separated parts</td></tr>
+            <tr><td>Points are awarded according to the table below.</td></tr>
+            <tr><td>Points are awarded secretly and without explanation at the end of each round.</td></tr>
+            <tr><td>Each team is assigned a mentor</td></tr>
+            <tr><td>Mentors carry the message(s) between groups, but cannot change the message(s) in anyway.</td></tr>
+            <tr><td>Mentors should not give hints outside the strategy discussion.</td></tr>
+            <tr><td>Activity lead will float between groups and listen/hint/adjudicate/award points at discretion</td></tr>
+            <tr><td>Four games will be played, such that everyone gets try each roll</td></tr>
+            <tr><td>Rules, patterns, and reality itself are made to be broken</td></tr>
+            <tr><td>Student players shall in no circumstance listen in on the discussions of other groups.</td></tr>
+            <tr><td>User and server groups may only directly interact during the strategy phase.</td></tr>
+        </table>
+
+        <p>Points are scored according to the below table. Each message, question or response, will score for one team
+        or the other. If the message is modified by the hackers, then the condition to score inverts, but the message
+        will still score. Only the actions of the user/servers declaring "valid" or "invalid" will result in points,
+        however; who scores is dependent on the message history. <em>How points are scored remains secret in order to
+        prevent information from leaking about the other team's strategy.</em> Make sure to tack actions such that your
+        group can hypothesis what is going on.</p>
+
+        <table class="table table-dark table-striped">
+            <tr><th>Scoring Event</th><th>User/Server Points</th><th>Hacker Points</th></tr>
+            <tr><td>Unchanged message successfully received</td>      <td>+1</td><td> 0</td></tr>
+            <tr><td>Changed message detected</td>          <td>+1</td><td> 0</td></tr>
+            <tr><td>Changed message not detected</td>      <td> 0</td><td>+1</td></tr>
+            <tr><td>Unchanged message wrongly errored</td> <td> 0</td><td>+1</td></tr>
+        </table>
+
+        <p><em>Note:</em> each message user to server and server to user will score a point for one team or the other.
+        Thus two points are available per round, and an infinite but even number of points is expected.  There is a way
+        to score an odd number of points.
+
+        <table class="table table-dark table-striped">
+            <tr><th># </th><th>How it is Played</th></tr>
+            <tr><td>1 </td><td>Users decide on a question and hand any message(s) to their assigned mentor</td></tr>
+            <tr><td>2 </td><td>User's mentor switches to hackers and provides message(s) as-is</td></tr>
+            <tr><td>3 </td><td>Hackers decide on any message(s) and provide them to their assigned mentor</td></tr>
+            <tr><td>4 </td><td>Hacker's mentor joins servers and provides messages(s) as-is</td></tr>
+            <tr><td>5 </td><td>Servers decide if message(s) is valid or invalid. This will score a point for a team.</td></tr>
+            <tr><td>6 </td><td>Servers decide on any response and hand any message(s) to their assigned mentor</td></tr>
+            <tr><td>7 </td><td>Server's mentor switches to hackers and provides message(s) as-is</td></tr>
+            <tr><tr><td>8 </td><td>Hackers decide on any message(s) and provide them to their assigned mentor</td></tr>
+            <tr><td>9 </td><td>Hacker's mentor joins users and provides messages(s) as-is</td></tr>
+            <tr><td>10</td><td>Users decide if message(s) is valid or invalid. This will score a point for a team.<</td></tr>
+            <tr><td>11</td><td>Activity lead tabulates scores, and secretly tell each team's score for the round.</td></tr>
+        </table>
+
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vRi1rh6yXcmh_1-IlUOpbTL46gpqWHhotv4rD6JPzN_69eGscnb_Zibna8CjAr9jNBE-TN2JfTE7gwh/pub?w=977&amp;h=222">
+
+        <p>As described, the game proceeds in this order repeating as many time as needed to fill the game's time limit.
+        A game is only finished when the active round ends.</p>
+
+        <table class="table table-dark table-striped">
+            <tr><th>Hints</th></tr>
+            <tr><td>Think outside the box</td></tr>
+            <tr><td>Try to break the system to your team's advantage</td></tr>
+            <tr><td>Remember everything that happens</td></tr>
+            <tr><td>Work together and remember that everyone in your club is a teammate</td></tr>
+            <tr><td><em>Do not place to much emphasis in the points. Have fun instead!</em></td></tr>
+        </table>
+    </div>
+    </body>
+</html>

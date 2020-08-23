@@ -1,0 +1,14 @@
+body {
+    background: black;
+    color: deeppink;
+}
+
+.hint {
+    background-color: #343a40;
+    color: #343a40;
+}
+
+ .hint:hover {
+    background-color: #343a40;
+    color: deeppink;
+}
