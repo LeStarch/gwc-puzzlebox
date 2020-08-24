@@ -1,6 +1,6 @@
 body {
-    background: black;
-    color: deeppink;
+    background: white;
+    color: black;
 }
 
 .hint {
@@ -9,6 +9,6 @@ body {
 }
 
  .hint:hover {
-    background-color: #343a40;
-    color: deeppink;
+    background-color: white;
+    color: black;
 }
