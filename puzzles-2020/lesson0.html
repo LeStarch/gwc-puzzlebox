@@ -11,7 +11,14 @@
     </head>
     <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-dark bg-dark"><h1 class="navbar-text">Lesson 0: Think Like A Hacker: 40+ mins</h1></nav>
+        <!-- Navigation Bar -->
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a class = "active" href="./lesson0.html">Lesson 0</a></li>
+            <li><a href="lesson1.html">Lesson 1</a></li>
+            <li><a href="http://lestarch.github.io/gwc-puzzlebox/puzzle-ex/">Lesson 2</a></li>
+        </ul>
+        <h1 class="navbar-text">Lesson 0: Think Like A Hacker: 40+ mins</h1>
 
         <h2>Introduction</h2>
         <p>Hackers and security personnel are involved in a cat-and-mouse game. Each is trying to outwit the other and
@@ -24,14 +31,14 @@
         afoot!  The users and servers need to work together to try and communicate without letting the hackers in.  The
         hackers must attack and remain unnoticed.</p>
 
-        <table class="table table-dark table-striped">
-            <tr><th>Requirements</th></tr>
-            <tr><td>Six or more students</td></tr>
-            <tr><td>Three mentors</td></tr>
-            <tr><td>One activity lead</td></tr>
-            <tr><td>Breakout rooms, or ability to do small groups</td></tr>
-            <tr><td>Pencil/paper/pen</td></tr>
-        </table>
+        <button class="collapsible">Requirements</button>
+        <div class="content">
+            <p style="margin-top: 15px; font-weight: bold">Six or more students</p>
+            <p style="margin-top: 15px; font-weight: bold">Three mentors</p>
+            <p style="margin-top: 15px; font-weight: bold">One activity lead</p>
+            <p style="margin-top: 15px; font-weight: bold">Breakout rooms, or ability to do small groups</p>
+            <p style="margin-top: 15px; font-weight: bold">Pencil/paper/pen</p>
+        </div>
 
         <h2>Rules</h2>
 
@@ -43,24 +50,24 @@
         to attack whenever they please, but must do so without alarming either of the two endpoints. In order to score,
         the hackers must allow the users and servers to remain blissfully unaware of their influence.</p>
 
-        <table class="table table-dark table-striped">
-            <tr><th>Rules</th>
-            <tr><td>Setup: Teams are given 3 mins to discuss strategy before a game begins</td></tr>
-            <tr><td>Round: one question and response pair</td></tr>
-            <tr><td>Game: 6 mins to run as many rounds as possible</td></tr>
-            <tr><td>The game is not over until the active round ends</td></tr>
-            <tr><td>The users and servers team will be broken into two separated parts</td></tr>
-            <tr><td>Points are awarded according to the table below.</td></tr>
-            <tr><td>Points are awarded secretly and without explanation at the end of each round.</td></tr>
-            <tr><td>Each team is assigned a mentor</td></tr>
-            <tr><td>Mentors carry the message(s) between groups, but cannot change the message(s) in anyway.</td></tr>
-            <tr><td>Mentors should not give hints outside the strategy discussion.</td></tr>
-            <tr><td>Activity lead will float between groups and listen/hint/adjudicate/award points at discretion</td></tr>
-            <tr><td>Four games will be played, such that everyone gets try each roll</td></tr>
-            <tr><td>Rules, patterns, and reality itself are made to be broken</td></tr>
-            <tr><td>Student players shall in no circumstance listen in on the discussions of other groups.</td></tr>
-            <tr><td>User and server groups may only directly interact during the strategy phase.</td></tr>
-        </table>
+        <button class="collapsible">Rules</button>
+        <div class="content">
+            <p style="margin-top: 15px; font-weight: bold">Setup: Teams are given 3 mins to discuss strategy before a game begins</p>
+            <p style="margin-top: 15px; font-weight: bold">Round: one question and response pair</p>
+            <p style="margin-top: 15px; font-weight: bold">Game: 6 mins to run as many rounds as possible<p>
+            <p style="margin-top: 15px; font-weight: bold">The game is not over until the active round ends<p>
+            <p style="margin-top: 15px; font-weight: bold">The users and servers team will be broken into two separated parts<p>
+            <p style="margin-top: 15px; font-weight: bold">Points are awarded according to the table below.<p>
+            <p style="margin-top: 15px; font-weight: bold">Points are awarded secretly and without explanation at the end of each round.<p>
+            <p style="margin-top: 15px; font-weight: bold">Each team is assigned a mentor<p>
+            <p style="margin-top: 15px; font-weight: bold">Mentors carry the message(s) between groups, but cannot change the message(s) in anyway.<p>
+            <p style="margin-top: 15px; font-weight: bold">Mentors should not give hints outside the strategy discussion.<p>
+            <p style="margin-top: 15px; font-weight: bold">Activity lead will float between groups and listen/hint/adjudicate/award points at discretion<p>
+            <p style="margin-top: 15px; font-weight: bold">Four games will be played, such that everyone gets try each roll<p>
+            <p style="margin-top: 15px; font-weight: bold">Rules, patterns, and reality itself are made to be broken<p>
+            <p style="margin-top: 15px; font-weight: bold">Student players shall in no circumstance listen in on the discussions of other groups.<p>
+            <p style="margin-top: 15px; font-weight: bold">User and server groups may only directly interact during the strategy phase.<p>
+        </div>
 
         <h2>Scoring</h2>
 
@@ -84,37 +91,50 @@
         to score an odd number of points.
 
         <h2>How To Play</h2>
-
-        <table class="table table-dark table-striped">
-            <tr><th># </th><th>How it is Played</th></tr>
-            <tr><td>1 </td><td>Users decide on a question and hand any message(s) to their assigned mentor</td></tr>
-            <tr><td>2 </td><td>User's mentor switches to hackers and provides message(s) as-is</td></tr>
-            <tr><td>3 </td><td>Hackers decide on any message(s) and provide them to their assigned mentor</td></tr>
-            <tr><td>4 </td><td>Hacker's mentor joins servers and provides messages(s) as-is</td></tr>
-            <tr><td>5 </td><td>Servers decide if message(s) is valid or invalid. This will score a point for a team.</td></tr>
-            <tr><td>6 </td><td>Servers decide on any response and hand any message(s) to their assigned mentor</td></tr>
-            <tr><td>7 </td><td>Server's mentor switches to hackers and provides message(s) as-is</td></tr>
-            <tr><tr><td>8 </td><td>Hackers decide on any message(s) and provide them to their assigned mentor</td></tr>
-            <tr><td>9 </td><td>Hacker's mentor joins users and provides messages(s) as-is</td></tr>
-            <tr><td>10</td><td>Users decide if message(s) is valid or invalid. This will score a point for a team.<</td></tr>
-            <tr><td>11</td><td>Activity lead tabulates scores, and secretly tell each team's score for the round.</td></tr>
-        </table>
+        <button class="collapsible">How it is Played</button>
+        <div class="content">
+            <p style="margin-top: 15px; font-weight: bold">Users decide on a question and hand any message(s) to their assigned mentor<p>
+            <p style="margin-top: 15px; font-weight: bold">User's mentor switches to hackers and provides message(s) as-is<p>
+            <p style="margin-top: 15px; font-weight: bold">Hackers decide on any message(s) and provide them to their assigned mentor<p>
+            <p style="margin-top: 15px; font-weight: bold">Hacker's mentor joins servers and provides messages(s) as-is<p>
+            <p style="margin-top: 15px; font-weight: bold">Servers decide if message(s) is valid or invalid. This will score a point for a team.<p>
+            <p style="margin-top: 15px; font-weight: bold">Servers decide on any response and hand any message(s) to their assigned mentor<p>
+            <p style="margin-top: 15px; font-weight: bold">Server's mentor switches to hackers and provides message(s) as-is<p>
+            <p style="margin-top: 15px; font-weight: bold">Hackers decide on any message(s) and provide them to their assigned mentor<p>
+            <p style="margin-top: 15px; font-weight: bold">Hacker's mentor joins users and provides messages(s) as-is<p>
+            <p style="margin-top: 15px; font-weight: bold">Users decide if message(s) is valid or invalid. This will score a point for a team.<p>
+            <p style="margin-top: 15px; font-weight: bold">Activity lead tabulates scores, and secretly tell each team's score for the round.<p>
+        </div>
 
         <img src="https://docs.google.com/drawings/d/e/2PACX-1vRi1rh6yXcmh_1-IlUOpbTL46gpqWHhotv4rD6JPzN_69eGscnb_Zibna8CjAr9jNBE-TN2JfTE7gwh/pub?w=977&amp;h=222">
 
         <p>As described, the game proceeds in this order repeating as many time as needed to fill the game's time limit.
         A game is only finished when the active round ends.</p>
 
-        <h2>Hints</h2>
-
-        <table class="table table-dark table-striped">
-            <tr><th>Hints</th></tr>
-            <tr><td>Think outside the box</td></tr>
-            <tr><td>Try to break the system to your team's advantage</td></tr>
-            <tr><td>Remember everything that happens</td></tr>
-            <tr><td>Work together and remember that everyone in your club is a teammate</td></tr>
-            <tr><td><em>Do not place to much emphasis in the points. Have fun instead!</em></td></tr>
-        </table>
+        <button class="collapsible">Hints</button>
+        <div class="content">
+            <p style="margin-top: 15px; font-weight: bold">Think outside the box</p>
+            <p style="margin-top: 15px; font-weight: bold">Try to break the system to your team's advantage</p>
+            <p style="margin-top: 15px; font-weight: bold">Remember everything that happens</p>
+            <p style="margin-top: 15px; font-weight: bold">Work together and remember that everyone in your club is a teammate</p>
+            <p style="margin-top: 15px; font-weight: bold">Do not place to much emphasis in the points. Have fun instead!</p>
+        </div>
     </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
     </body>
 </html>

@@ -2,6 +2,70 @@ body {
     background: white;
     color: black;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+li a.active {
+    background-color: #DB7093;
+    color: white;
+}
+
+.collapsible {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #DB7093;
+}
+
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #808080;
+    margin-bottom: 10px;
+
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #FF69B4;
+    border-color: #FF69B4;
+}
 
 .hint {
     background-color: #343a40;
