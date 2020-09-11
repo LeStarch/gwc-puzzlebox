@@ -60,6 +60,12 @@ li a.active {
 
 }
 
+.btn-danger {
+    color: #fff;
+    background-color: #FF69B4;
+    border-color: #FF69B4;
+}
+
 .hint {
     background-color: #343a40;
     color: #343a40;
