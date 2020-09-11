@@ -22,14 +22,42 @@ li a {
     text-decoration: none;
 }
 
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
 li a.active {
     background-color: #DB7093;
     color: white;
 }
 
-li a:hover:not(.active) {
-    background-color: #555;
+.collapsible {
+    background-color: #777;
     color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+
 }
 
 .hint {
