@@ -4,9 +4,8 @@
 
 var userdict = [ 
     {'name':'gwc', 'passwd':'gwcisawesome'},
-    {'name':'linton', 'passwd':'Ilovecats'},
-    {'name':'ldang', 'passwd':'4cats'},
-    {'name':'starch', 'passwd':'nasa2018'}
+    {'name':'starch', 'passwd':'nasa2023'},
+    {'name':'valentina', 'passwd':'BestPresidentEver'}
 ];
 
 function valid_user(username) {
